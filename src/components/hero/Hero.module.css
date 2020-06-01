@@ -1,0 +1,77 @@
+.container {
+    background-color: #7510F7;
+    color: white;
+    padding-bottom: 18rem;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner{
+    padding: 9rem 1.5rem;
+    width: 60%;
+}
+
+.title{
+    font-size: 2rem;
+    line-height: 1.125;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle{
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.subtitle{
+    position: relative;
+    /* display: block; */
+}
+
+.spantest{
+    position: relative;
+    display: inline-block;
+
+}
+.squiggle{
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    overflow: visible;
+    top: -6px;
+}
+mark {
+    background: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+@media only screen and (max-width: 768px){
+    .container {
+        padding-bottom: 10rem;
+    }
+
+    .inner{
+        padding: 9rem 2rem;
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.7rem;
+        
+    }
+    
+    .subtitle
+    {
+        font-size: 1.2rem;
+    }
+}

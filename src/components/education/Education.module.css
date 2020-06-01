@@ -1,0 +1,70 @@
+.container{
+    padding : 9rem 1.5rem;
+    text-align: center;
+   /*  border: red solid 1px; */
+}
+
+
+.title{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle{
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    word-break: break-word;
+    margin-bottom: 1.5rem;
+}
+
+
+
+  .main{
+  position: relative;
+  /* border: springgreen solid 1px; */
+  }
+  .card{
+  display:inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 5px 0 rgba(55, 56, 56, 0.2), 0 0 0 1px #E6ECF8;
+  /* border: hotpink solid 1px; */
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  }
+
+  .rotate{
+      transform: rotateZ(50deg);
+  }
+
+  .rslide{
+      animation: rslide 1s ease-in-out forwards;
+    }
+
+    @keyframes rslide {
+      0%{
+        transform : translateX(0%) translateY(0%) rotateZ(50deg);
+      }
+  
+      100%{
+        transform : translateX(-360px) translateY(-240px) rotateZ(-120deg);
+      }
+    }
+
+  .slide{
+    animation: slide 1s ease-in-out forwards;
+  }
+
+  @keyframes slide {
+    0%{
+      transform : translateX(0%) translateY(0%) rotateZ(0deg);
+    }
+
+    100%{
+      transform : translateX(360px) translateY(240px) rotateZ(120deg);
+    }
+  }
+
