@@ -1,0 +1,92 @@
+.container{
+    padding: 1rem 1.5rem 4rem;
+    background-color: #0093E9;
+    background-image: linear-gradient(540deg, #0093E9 0%, #80D0C7 100%);
+    color: #fff;
+    text-align: center !important;
+    display: block;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+.logo{
+
+} */
+
+.heading{
+    width: 33.3333%;
+    margin: 2rem auto;
+    opacity: 0.7;
+}
+
+.heading h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 2rem auto;
+    line-height: 1.125;
+}
+
+.subbox{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 3.5rem;
+}
+
+.socialicons{
+    margin-bottom: 2rem;
+    display: block;
+    width: 400px;
+    opacity: 0.4;
+ 
+}
+
+.socialicons {
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.socialicons a{
+    display:flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+ 
+}
+
+.socialicons a{
+    border: white solid 2px ;
+    border-radius: 70px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.copyright{
+    opacity: 0.7;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.copyicon{
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+}

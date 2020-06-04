@@ -1,0 +1,48 @@
+.container{
+    background-color: khaki;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1400px;
+    min-width: 20px;
+}
+
+.item{
+    opacity: 0;
+    width: 33%;
+   /*  height: 100%;
+    margin: 10px 100px; */
+    background-color: greenyellow;
+    border: green solid 1px;
+    margin: 0 20px;
+}
+
+.item p {
+    display: block;
+    padding: 50px;
+}
+
+  
+
+/* BORDERS */
+
+.red{
+    border: brown solid 1px;
+}
+
+.blue{
+    border: blue solid 1px;
+}
+
+.yellow{
+    border: yellow solid 1px;
+}

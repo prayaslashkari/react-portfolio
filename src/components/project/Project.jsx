@@ -17,12 +17,12 @@ const Project = () => {
 
                         <div className={styles.projectitem}>
                             <figure className={styles.item}>
-                                <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
+                                <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="thumb"/>
                                 
                                 <div className={styles.overlay}></div>
                                 <figcaption className={styles.items}>
-                                    <h1 class={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                                    <a class={styles.projbutton} href="">Visit Website</a>
+                                    <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                                    <a className={styles.projbutton} href="button">Visit Website</a>
                                 </figcaption>
                             </figure>
                         </div>
@@ -32,8 +32,8 @@ const Project = () => {
                             <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
 
                             <figcaption className={styles.items}>
-                                <h1 class={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                                <a class={styles.projbutton} href=""><span>Visit Website</span></a>
+                                <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                                <a className={styles.projbutton} href=""><span>Visit Website</span></a>
                             </figcaption>
                         </figure>
                     </div>
@@ -43,8 +43,8 @@ const Project = () => {
                         <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
 
                         <figcaption className={styles.items}>
-                            <h1 class={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                            <a class={styles.projbutton} href=""><span>Visit Website</span></a>
+                            <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                            <a className={styles.projbutton} href="button"><span>Visit Website</span></a>
                         </figcaption>
 
                     </figure>
@@ -55,8 +55,8 @@ const Project = () => {
                     <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
 
                     <figcaption className={styles.items}>
-                        <h1 class={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                        <a class={styles.projbutton} href=""><span>Visit Website</span></a>
+                        <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                        <a className={styles.projbutton} href="button"><span>Visit Website</span></a>
                     </figcaption>
 
                 </figure>
@@ -64,11 +64,11 @@ const Project = () => {
 
                         <div className={styles.projectitem}>
             <figure className={styles.item}>
-                <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
+                <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="back"/>
 
                 <figcaption className={styles.items}>
-                    <h1 class={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                    <a class={styles.projbutton} href=""><span>Visit Website</span></a>
+                    <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                    <a className={styles.projbutton} href="button"><span>Visit Website</span></a>
                 </figcaption>
 
             </figure>
@@ -76,11 +76,11 @@ const Project = () => {
 
                         <div className={styles.projectitem}>
         <figure className={styles.item}>
-            <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
+            <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="link"/>
 
             <figcaption className={styles.items}>
-                <h1 class={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                <a class={styles.projbutton} href=""><span>Visit Website</span></a>
+                <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                <a className={styles.projbutton} href="#"><span>Visit Website</span></a>
             </figcaption>
 
         </figure>
@@ -88,7 +88,7 @@ const Project = () => {
                     </div>
 
                     <div className={styles.button}>
-                    <a href=""><span className={styles.icon}></span><span>Checkout my Behance</span></a>
+                    <a href="icon"><span className={styles.icon}></span><span>Checkout my Behance</span></a>
                     </div>
 
                 </div>

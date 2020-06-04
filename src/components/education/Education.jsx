@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styles from './Education.module.css';
-import { Transition, animated } from 'react-spring/renderprops'
-
 import cx from 'classnames'
 
 class Education extends Component {

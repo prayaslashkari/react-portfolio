@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.css';
 
-import {Hireme,Photogrid, Navbar,Hero,Skills, Project, Education} from './components';
+import {Demo,Footer, Hireme, Photogrid, Navbar,Hero,Skills, Project, Education} from './components';
 
 function App() {
   return (
     <div className="App">
       <Navbar/> 
+      <Demo/>
       <Hero/>
       <Skills/>
-      {/* <Education/> */}
+      <Education/>
       <Project/>
       <Hireme/>
+      <Footer/>
 
    {/* <Photogrid/>*/}
     </div> 

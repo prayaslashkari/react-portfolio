@@ -1,7 +1,9 @@
 .container{
-    padding : 9rem 1.5rem;
+    padding : 18rem 1.5rem;
     text-align: center;
    /*  border: red solid 1px; */
+   overflow: hidden;
+   /* border: springgreen solid 1px; */
 }
 
 
@@ -25,6 +27,7 @@
   position: relative;
   /* border: springgreen solid 1px; */
   }
+
   .card{
   display:inline-block;
   position: relative;
