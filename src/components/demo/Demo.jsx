@@ -18,6 +18,7 @@ const Demo = () => {
          TweenMax.to(
              [box,box3],
              0.8,
+            /*  {cssRule: {color: "#1DFEFF"}}, */
              {
                  opacity: 1,
                  y: -10,

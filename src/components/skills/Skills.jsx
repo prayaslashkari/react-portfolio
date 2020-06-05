@@ -7,6 +7,10 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
+ScrollTrigger.defaults({
+    toggleActions: "restart pause resume pause"
+  });
+  
 
 
 
@@ -16,22 +20,24 @@ const Skills = () => {
     let card3 = useRef(null);
 
     useEffect(()=>{
-            gsap.from(
+            gsap.fromTo(
                 [card1,card2,card3],
-                5,
+                2,
+                {rotationY: -90},
                 {      
                        scrollTrigger: {
                        trigger:  [card1,card2,card3],
                        scrub: true,
-                       markers: true,
-                       start: "-=700px",
+                       markers: false,
+                       start: "-=600px",
                        end: "+=500",
-                       
                      },
-                    opacity: 0,
-                    y: +100,
+                    yoyo: true,
+                    opacity: 1,
+                    rotateY: 0,
+                    y: 0,
                     ease: Power3.easeOut,
-                    stagger:1,
+                    stagger:0.5,
                    }) 
     })
     return ( 

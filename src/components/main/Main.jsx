@@ -1,7 +1,24 @@
-import React from 'react';
+import React, {useEffect,useRef} from 'react';
 import styles from './Main.module.css'
+import { gsap,Power3,Power2,sine} from 'gsap';
 
 const Main = () => {
+
+    let simage = useRef(null)
+
+    useEffect(()=>{
+        gsap.from(
+            simage,
+            2,
+            {
+            x: -10,
+            y:+10,
+            ease: "sine.inOut",
+            repeat: -1,
+            yoyo: true,
+            yoyoEase: true,
+        })
+    })
     return ( 
         <div className={styles.container}>
             <div className={styles.inner}>
@@ -9,7 +26,7 @@ const Main = () => {
                     <div className={styles.upperin}>
                         <h1 className={styles.title}>Graphic Designer, Frontend Developer, Motion Graphic</h1>
                         <h2 className={styles.subtitle}>I design and code beautifully simple things, and I love what I do.</h2>
-                        <img className={styles.avatar} src="https://mattfarley.ca/img/mf-avatar.svg"/> 
+                        <img ref = {el => {simage=el}} className={styles.avatar} src="https://mattfarley.ca/img/mf-avatar.svg"/> 
                     </div>
                 </div>
 

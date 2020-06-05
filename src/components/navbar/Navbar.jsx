@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import logo from '../../img/toplogo.png'
+import Hireme from './../hireme/Hireme';
 
 
 const Navbar = () => {
@@ -14,9 +15,9 @@ const Navbar = () => {
                 </div>
 
                 <div className={styles.menu}>
-                    <a className={styles.item2} href="/">Menu</a>
-                    <a className={styles.item2} href="/">Menu</a>
-                    <a className={styles.item} href="/">Menu</a>
+                    <a className={styles.item2} href="/">Hireme</a>
+                    <a className={styles.item2} href="/">Skills</a>
+                    <a className={styles.item} href="/">Resume</a>
                 </div>
             </div>
         </div>

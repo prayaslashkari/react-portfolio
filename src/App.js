@@ -10,7 +10,7 @@ function App() {
       <Main/> 
       <Hero/>
       <Skills/>
-      <Education/>
+     { /* <Education/> */}
       <Demo/>
       <Project/>
       <Hireme/>
