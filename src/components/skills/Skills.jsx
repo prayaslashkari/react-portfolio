@@ -1,15 +1,43 @@
 import React,{useEffect, useRef} from 'react';
 import styles from './Skills.module.css'
 
-import {TweenMax, Power3} from "gsap";
-import { Tween } from 'gsap/gsap-core';
+import {gsap,TweenMax, Power3} from "gsap";
+
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
+
+
 
 const Skills = () => {
+    let card1 = useRef(null);
+    let card2 = useRef(null);
+    let card3 = useRef(null);
 
+    useEffect(()=>{
+            gsap.from(
+                [card1,card2,card3],
+                5,
+                {      
+                       scrollTrigger: {
+                       trigger:  [card1,card2,card3],
+                       scrub: true,
+                       markers: true,
+                       start: "-=700px",
+                       end: "+=500",
+                       
+                     },
+                    opacity: 0,
+                    y: +100,
+                    ease: Power3.easeOut,
+                    stagger:1,
+                   }) 
+    })
     return ( 
         <div className={styles.container}>
             <div className={styles.inner}>
-                <div className={styles.card}>
+                <div ref={el => {card1 = el}} className={styles.card}>
                     <figure className={styles.image}><img src="https://img.icons8.com/nolan/64/designer.png" alt="thumb"/></figure>
                     <h1 className={styles.title}> Design</h1>
                     <p className={styles.content}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nam, repudiandae modi deserunt excepturi quia?</p>
@@ -21,7 +49,7 @@ const Skills = () => {
                     </ul>
                 </div>
 
-                <div className={styles.card}>
+                <div ref={el => {card2 = el}} className={styles.card}>
                 <figure className={styles.image}><img alt="thumb" src="https://img.icons8.com/nolan/64/development-skill.png"/></figure>
                     <h1 className={styles.title}> Development</h1>
                     <p className={styles.content}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nam, repudiandae modi deserunt excepturi quia?</p>
@@ -37,7 +65,7 @@ const Skills = () => {
                     </ul>
                 </div>
 
-                <div className={styles.card}>
+                <div ref={el => {card3 = el}} className={styles.card}>
                 <figure className={styles.image}><img alt="thumb" src="https://img.icons8.com/nolan/64/idea-sharing.png"/></figure>
 
                     <h1 className={styles.title}> Creative</h1>

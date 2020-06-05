@@ -1,5 +1,5 @@
 .container{
-    background-color: khaki;
+    background-color: rgb(207, 207, 207);
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -21,9 +21,11 @@
     width: 33%;
    /*  height: 100%;
     margin: 10px 100px; */
-    background-color: greenyellow;
-    border: green solid 1px;
+    background-color: rgb(255, 255, 255);
     margin: 0 20px;
+    
+    
+    /* border: green solid 1px; */
 }
 
 .item p {
