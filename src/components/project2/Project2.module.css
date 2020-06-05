@@ -1,0 +1,33 @@
+.container{
+padding: 100px;
+max-height: 60vh;
+background-color: black;
+text-align: center;
+
+
+}
+
+.inner{
+
+}
+
+.innerF{
+
+}
+
+.title{
+    
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.125;
+    z-index: 1;
+}
+
+
+
+
+
+.innerS{
+
+}
