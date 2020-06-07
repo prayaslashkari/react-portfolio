@@ -10,7 +10,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 ScrollTrigger.defaults({
-    toggleActions: "restart pause resume pause"
+    toggleActions: "restart pause resume restart"
   });
 
 const LiveProject = () => {
@@ -21,10 +21,9 @@ const LiveProject = () => {
     let item5 = useRef(null)
     let item6 = useRef(null)
      
-    
     useEffect(()=>{
         gsap.from([item1,item2,item3,item4,item5,item6], 
-            0.8,
+            1.2,
             { 
                     scrollTrigger : {
                     trigger:  [item1,item2,item3,item4,item5,item6],
@@ -32,8 +31,10 @@ const LiveProject = () => {
                     markers: true,
                     start: "-=600px",
                     end: "+=500",
+                    toggleActions: "restart pause resume reset",
           },
-          y: -10, 
+          /* scale: 0.9, */
+          y: -20, 
           opacity:0, 
           ease: Power3.easeInOut,
           stagger:0.1,
@@ -57,7 +58,7 @@ const LiveProject = () => {
                     <div className={styles.grid}>
 
                         <div ref={el => item1 = el} className={styles.item}>
-                            <div className={styles.iteminner}>
+                            <div  className={styles.iteminner}>
                                 <img className={styles.image} src="https://mattfarley.ca/img/logos/kybercore.svg" alt="project"/>
                                 <h2 className={styles.imagetext}>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</h2>
                                 <div className={styles.spanspan}>ICON AND TEXT</div>

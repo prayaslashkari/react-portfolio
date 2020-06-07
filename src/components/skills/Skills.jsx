@@ -35,7 +35,7 @@ const Skills = () => {
                     y: 0,
                     ease: Power3.easeOut,
                     stagger:0.5,
-                   }) 
+                }) 
     })
     return ( 
         <div className={styles.container}>
