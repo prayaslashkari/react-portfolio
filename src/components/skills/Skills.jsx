@@ -11,9 +11,6 @@ ScrollTrigger.defaults({
     toggleActions: "restart pause resume pause"
   });
   
-
-
-
 const Skills = () => {
     let card1 = useRef(null);
     let card2 = useRef(null);

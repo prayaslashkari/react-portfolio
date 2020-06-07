@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import {Project2, Demo,Footer, Hireme, Photogrid, Navbar,Hero,Skills, Project, Education, Main} from './components';
+import {LiveProject,Project2, Demo,Footer, Hireme, Photogrid, Navbar,Hero,Skills, Project, Education, Main} from './components';
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <Hero/>
       <Skills/>
      { /* <Education/> */}
-      <Demo/>
-      <Project2/>
-      <Project/>
+      {/* <Demo/> */}
+      {/* <Project/> */}
+      <LiveProject/>
 
       <Hireme/>
       <Footer/>

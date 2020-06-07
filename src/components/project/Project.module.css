@@ -66,7 +66,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
-   /*  border: tomato solid 1px; */
+    /* border: tomato solid 1px; */
     padding : 4rem;
     max-width: 1500px;
 }

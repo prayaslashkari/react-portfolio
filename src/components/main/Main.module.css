@@ -48,3 +48,27 @@
 .lowerin{
     margin-bottom: -0.45rem;
 }
+
+@media only screen and (max-width: 768px){
+
+.imagebot{
+    width: 550px;
+}
+
+}
+
+@media only screen and (max-width: 576px){
+
+    .imagebot{
+        width: 400px;
+    }
+    
+}
+
+@media only screen and (max-width: 430px){
+
+    .imagebot{
+        width: 350px;
+    }
+    
+    }

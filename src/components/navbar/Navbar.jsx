@@ -15,9 +15,15 @@ const Navbar = () => {
                 </div>
 
                 <div className={styles.menu}>
-                    <a className={styles.item2} href="/">Hireme</a>
-                    <a className={styles.item2} href="/">Skills</a>
-                    <a className={styles.item} href="/">Resume</a>
+                    <div >
+                        <a className={styles.item2} href="/">Hireme</a>
+                    </div>
+                    <div>
+                        <a className={styles.item2} href="/">Skills</a>
+                    </div>
+                    <div className={styles.mainDiv}>
+                        <a className={styles.item} href="/">Resume</a>
+                    </div>
                 </div>
             </div>
         </div>

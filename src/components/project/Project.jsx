@@ -28,15 +28,15 @@ const Project = () => {
                         </div>
 
                         <div className={styles.projectitem}>
-                        <figure className={styles.item}>
-                            <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
+                            <figure className={styles.item}>
+                                <img className={styles.thumb} src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt=""/>
 
-                            <figcaption className={styles.items}>
-                                <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
-                                <a className={styles.projbutton} href=""><span>Visit Website</span></a>
-                            </figcaption>
-                        </figure>
-                    </div>
+                                <figcaption className={styles.items}>
+                                    <h1 className={styles.projtitle}>High-end, custom residential renovaters serving Fraser Valley homeowners.</h1>
+                                    <a className={styles.projbutton} href=""><span>Visit Website</span></a>
+                                </figcaption>
+                            </figure>
+                        </div>
 
                         <div className={styles.projectitem}>
                     <figure className={styles.item}>
