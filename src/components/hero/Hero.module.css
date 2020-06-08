@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: hotpink solid 1px;
+    /* border: hotpink solid 1px; */
 }
 
 .inner{
