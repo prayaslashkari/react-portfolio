@@ -5,6 +5,8 @@
     color: #fff;
     text-align: center !important;
     display: block;
+    border: hotpink solid 1px;
+
 }
 
 .inner {
@@ -43,20 +45,18 @@
     margin: 0 auto 3.5rem;
 }
 
-.socialicons{
-    margin-bottom: 2rem;
-    display: block;
-    width: 400px;
-    opacity: 0.4;
- 
-}
 
 .socialicons {
     display:flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
+    width: 400px;
+    opacity: 0.4;
+    background-color: yellowgreen;
 }
+
 
 .socialicons a{
     display:flex;
@@ -89,4 +89,12 @@
     justify-content: center;
     height: 2rem;
     width: 2rem;
+}
+
+@media only screen and (max-width: 430px){
+    .socialicons{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
 }

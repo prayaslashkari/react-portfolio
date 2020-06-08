@@ -1,7 +1,9 @@
 .container{
-    
     min-height: 3.25rem;
-    padding: 1.2rem 0;
+    padding: 0 0;
+    background-color: plum;
+    border: yellow solid 1px;
+    
 }
 
 .inner {
@@ -11,9 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     padding: 0.5rem 0.75rem;
-
 }
 
 
@@ -86,14 +86,15 @@
 }
 
 .brand img{
-    height: 48px;
+    height: 150px;
+    background-color: yellow;
 }
 
 
 @media only screen and (max-width: 768px){
     .brand img{
-        height: 24px;
-        background-color: tomato;
+        height: 100px;
+        /* background-color: tomato; */
     }
 
     .item{
@@ -138,11 +139,9 @@
     
         border: #0093E9 solid 1.5px;
         border-radius: 20px;
-    
         padding: 0.5rem 1rem;
-    
         transition: all 0.2s ease-in-out;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .item2{
@@ -150,13 +149,24 @@
         font-weight: 500;
         color: rgb(29, 29, 29);
         margin-left: 10px;
-    
         text-decoration: none;
         cursor: pointer;
-    
         transition: all 0.2s ease-in-out;
     
     }
 
+    @media only screen and (max-width: 490px){
+        .inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu{
+            border: springgreen solid 1px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
 }
 

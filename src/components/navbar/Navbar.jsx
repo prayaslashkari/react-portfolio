@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import logo from '../../img/toplogo.png'
+import logo from '../../icons/toplogo.png'
+import svg from '../../icons/logo.svg'
 
 const Navbar = () => {
     return ( 
@@ -8,20 +9,24 @@ const Navbar = () => {
             <div className= {styles.inner}>
                 <div className={styles.brand}>
                     <a>
-                        <img src={logo} alt=""/>
+                        <img src={svg} alt=""/>
                     </a>
                 </div>
 
                 <div className={styles.menu}>
+
                     <div >
                         <a className={styles.item2} href="/">Hireme</a>
                     </div>
+
                     <div>
                         <a className={styles.item2} href="/">Skills</a>
                     </div>
+
                     <div className={styles.mainDiv}>
                         <a className={styles.item} href="/">Resume</a>
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -5,7 +5,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: hotpink solid 2px;
 }
+
 
 .inner {
     max-width: 1344px;
@@ -37,6 +39,7 @@
 
 .avatar{
     margin: 2rem 0;
+    width: 217px;
 }
 
 /* LOWER BLOCK */
