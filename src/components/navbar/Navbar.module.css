@@ -101,15 +101,10 @@
         font-size: 14px;
         font-weight: 500;
         color: #0093E9;
-    
         cursor : pointer;
         text-decoration: none;
-    
-        border: #0093E9 solid 1.5px;
         border-radius: 20px;
-    
         padding: 0.5rem 1.5rem;
-    
         transition: all 0.2s ease-in-out;
         margin-left: 40px;
     }
@@ -122,9 +117,7 @@
     
         text-decoration: none;
         cursor: pointer;
-    
         transition: all 0.2s ease-in-out;
-    
     }
 }
 
