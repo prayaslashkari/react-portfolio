@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import logo from '../../img/toplogo.png'
-import Hireme from './../hireme/Hireme';
-
 
 const Navbar = () => {
     return ( 
