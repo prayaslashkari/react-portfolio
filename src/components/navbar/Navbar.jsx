@@ -25,8 +25,7 @@ const Navbar = () => {
 
                     <div className={styles.mainDiv}>
                         <a className={styles.item} href="/">Resume</a>
-                    </div>
-                    
+                    </div>   
                 </div>
             </div>
         </div>
