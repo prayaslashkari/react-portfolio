@@ -10,4 +10,5 @@ export {default as Footer} from './footer/Footer'
 export {default as Demo} from './demo/Demo'
 export {default as Main} from './main/Main'
 export {default as Project2} from './project2/Project2'
+export {default as Progresslist} from './progress/Progresslist'
 
