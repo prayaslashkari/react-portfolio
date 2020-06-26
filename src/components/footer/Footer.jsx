@@ -27,9 +27,9 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className={styles.copyright}>
+                    {/* <div className={styles.copyright}>
                     Designed Inspired from Matt Farley<span className={styles.copyicon}> <img src="https://img.icons8.com/metro/20/FFFFFF/copyright.png"/></span>
-                     twentytwenty</div>
+                     twentytwenty</div> */}
 
                      <div className={styles.belowcopy}>
                     Disclaimer : This website is purely made for learning purpose, I hold no design rights</div>

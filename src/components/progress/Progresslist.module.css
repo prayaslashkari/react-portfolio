@@ -10,11 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 8rem 8rem 8rem;
+    padding: 4rem 0 8rem 0;
 }
 
 .content{
-    width: 700px;
+    width: 50%;
 }
 
 .title{
@@ -31,4 +31,18 @@
 
 .list{
     margin-top: -100px;
+}
+
+
+@media only screen and (max-width: 768px){
+
+ /*    .upper{
+        padding: 4rem 0rem 8rem 0rem;
+    } */
+
+
+    .content{
+        width: 90%;
+        /* border: springgreen solid 1px; */
+    }
 }

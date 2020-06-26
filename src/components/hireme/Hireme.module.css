@@ -72,13 +72,14 @@
     background-color:  #0093E9;
     border: none;
 }
+
+
 @media only screen and (max-width: 1280px){
     
     .hirebtn{
         color: white;
         padding: 0.5em 1.0em;
         font-weight: 400;
-        border:#7510F7 solid 2px;
         background-color: transparent;
         font-size: 1.25rem;
         border-radius: 100px;
@@ -95,7 +96,6 @@
         /* padding: 2.5rem 1.25rem; */
         grid-template-areas: 'myArea myArea myArea area';
         justify-items: center;
-        border: indigo solid 1px;
     }
     
     .itemp{
@@ -118,7 +118,6 @@
         color: white;
         padding: 0.5em 1.0em;
         font-weight: 400;
-        border:#7510F7 solid 2px;
         background-color: transparent;
         font-size: 1rem;
         border-radius: 100px;
@@ -138,7 +137,6 @@
         'myArea'
         'area';
         justify-items: center;
-        border: indigo solid 1px;
     }
     
     .itemp{

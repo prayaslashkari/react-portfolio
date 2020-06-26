@@ -67,6 +67,14 @@
     transform: scale(1.2);
 }
 
+@media only screen and (max-width: 430px){
+    .title{
+        font-size: 1.5rem;
+    }
+
+}
+
+
 
 @media only screen and (max-width: 768px){
 

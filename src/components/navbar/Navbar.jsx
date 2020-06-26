@@ -2,14 +2,21 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import logo from '../../icons/toplogo.png'
 import svg from '../../icons/logo.svg'
+import cx from 'classnames';
 
 const Navbar = () => {
     return ( 
         <div className= {styles.container}>
+            <div className={styles.brands}> 
+                <a>
+                    <img src={svg} alt=""/>
+                </a>
+            </div>
+
             <div className= {styles.inner}>
 
                 <div className={styles.menu}>
-                    <div >
+                    <div>
                         <a className={styles.item2} href="/">About Me</a>
                     </div>
 
