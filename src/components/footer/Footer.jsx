@@ -17,19 +17,22 @@ const Footer = () => {
                     </div>
 
                     <div className={styles.subbox}>
+                        
                         <div className={styles.socialicons}>
-                            <a><img src="https://img.icons8.com/bubbles/40/000000/360-view.png"/></a>
-                            <a><img src="https://img.icons8.com/bubbles/40/000000/360-view.png"/></a>
-                            <a><img src="https://img.icons8.com/bubbles/40/000000/360-view.png"/></a>
-                            <a><img src="https://img.icons8.com/bubbles/40/000000/360-view.png"/></a>
-                            <a><img src="https://img.icons8.com/bubbles/40/000000/360-view.png"/></a>
-                            <a><img src="https://img.icons8.com/bubbles/40/000000/360-view.png"/></a>
+                            <p className={styles.connect}>Connect :</p>
+                            <a href="https://www.linkedin.com/in/prayaslashkari/"><img src="https://img.icons8.com/color/45/000000/linkedin-circled.png"/></a>
+                            <a href="https://www.facebook.com/PrayasLashkari/"><img src="https://img.icons8.com/fluent/45/000000/facebook-new.png"/></a>
+                            <a href="https://www.behance.net/lazyprayas"><img src="https://img.icons8.com/color/45/000000/behance.png"/></a>
+                            <a href="mailto:prayas.lashkari98@gmail.com"><img src="https://img.icons8.com/cotton/45/000000/email-open.png"/></a>
                         </div>
                     </div>
 
                     <div className={styles.copyright}>
-                    Handcrafted by me<span className={styles.copyicon}> <img src="https://img.icons8.com/metro/20/FFFFFF/copyright.png"/></span>
+                    Designed Inspired from Matt Farley<span className={styles.copyicon}> <img src="https://img.icons8.com/metro/20/FFFFFF/copyright.png"/></span>
                      twentytwenty</div>
+
+                     <div className={styles.belowcopy}>
+                    Disclaimer : This website is purely made for learning purpose, I hold no design rights</div>
 
 
                 </div>

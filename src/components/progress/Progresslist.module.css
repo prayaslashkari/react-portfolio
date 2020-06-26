@@ -1,0 +1,34 @@
+.container{
+    /* border: violet solid 1px; */
+    margin-bottom: 150px;
+}
+
+.upper{
+    color: white;
+    text-align: center;
+    background-color: #005CE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 8rem 8rem 8rem;
+}
+
+.content{
+    width: 700px;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.subtitle{
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+.list{
+    margin-top: -100px;
+}

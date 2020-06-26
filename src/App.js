@@ -14,7 +14,7 @@ function App() {
       {/* <Demo/> */}
       {/* <Project/> */}
       <Progresslist/>
-      <LiveProject/>
+      {/* <LiveProject/> */}
 
       <Hireme/>
       <Footer/>

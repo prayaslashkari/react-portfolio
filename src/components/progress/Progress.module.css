@@ -1,5 +1,10 @@
 .container{
    /*  border: lawngreen solid 2px; */
+   transition: all 0.5s ease-in-out;
+}
+
+.container:hover{
+    transform: scale(1.02);
 }
 
 .inner{
@@ -24,39 +29,46 @@
 
 .title{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 20px;
 }
 
 .expand{
-    padding: 10px 0px;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.8), 0 0 0 1px #E6ECF8;
+    background: white;
+    padding: 30px 0px;
+   /*  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.8), 0 0 0 1px #E6ECF8; */
+   box-shadow: 0 5px 5px 0 rgba(129, 129, 129, 0.4), 0 0 0 1px #E6ECF8;
     border-radius: 5px;
+
 }
 
-
-.toggletwo{
-    /* border: hotpink solid 1px; */
-    overflow: hidden;
-/*     height: 100%; */
+.subtoggletwo{
     margin-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
 
+.toggletwo{
+    /* border: hotpink solid 1px; */
+    overflow: hidden;
+    display: block;
+    height: 100%;
 }
 
 .toggleone{
     overflow: hidden;
-    display: none;
+    display: block;
     height: 0%;
     margin-left: 20px;
 
 }
 .pretext{
     /* font-size: 1.2rem; */
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #005ce6;
 }
 
 .tech{
@@ -69,14 +81,14 @@
 
 .techspan{
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 400;
     color: rgb(121, 121, 121);
 }
 .techsub{
     display: block;
     margin-top:10px ;
     letter-spacing: 0px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .linkbox{
@@ -89,7 +101,7 @@
 
 .techlink{
     text-decoration: none;
-    color: rgb(79, 79, 255);
+    color: #005ce6;
     margin-left: 5px;
     font-weight: 500;
 }

@@ -15,8 +15,8 @@ const Progress = (props) => {
 
     useEffect(() => {
         TweenLite.to(image1,1.2,{repeat:-1,rotation: 180, ease:Power3.easeInOut})
-        setRotationTween(TweenLite.to([element2],0.5,{height: 0,opacity: 0,ease: Power3.easeOut}).reverse());
-        setRoTween(TweenLite.to([element1],0.5,{display: "block", height: "150", opacity: 1, ease: Power3.easeOut, delay: 0.2}).reverse());
+        setRotationTween(TweenLite.to([element2],0.5,{height: "0",opacity: 0,ease: Power3.easeInOut}).reverse());
+        setRoTween(TweenLite.fromTo([element1],0.5,{height:"0"},{ height: "auto", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse());
       }, []);
     
       useEffect(() => {
@@ -99,27 +99,31 @@ const Progress = (props) => {
 
     return ( 
         <div className={styles.container}>
+            
             <div className={styles.inner}>
                 <div className={styles.grid}>
 
                     <div className={styles.item}>
-                    
-                    <div onClick={()=>setExpand(!expand)} className={styles.expand}>
-                            <h1  className={styles.title}>{props.name}</h1>
-                            
-                            <div ref={el => {element2 = el}} className={styles.toggletwo}>
-                            
-                            <h2 className={styles.pretext}> Know more about it</h2><img src="https://img.icons8.com/plasticine/24/000000/tap.png"/></div> 
-                            <div ref={el => {element1 = el}} className={styles.toggleone}>
-                                <h2 className={styles.tech}><span className={styles.techspan}>TechStack : </span>{props.tech}</h2>
-                                <h2 className={styles.techsub}>{props.des}</h2> 
-                                <div className={styles.linkbox}>
-                                    <img ref={el=>{image1 = el}} src="https://img.icons8.com/ios-filled/20/000000/link.png"/>
-                                    <a className={styles.techlink} href={`https://${props.url}`}>{props.url}</a>
-                                </div>
+                        <div onClick={()=>setExpand(!expand)} className={styles.expand}>
+                                <h1 className={styles.title}>{props.name}</h1>
                                 
-                            </div>      
-                        </div>
+                                <div ref={el => {element2 = el}} className={styles.toggletwo}>
+                                    <div className={styles.subtoggletwo}>
+                                        <h2 className={styles.pretext}>Tap know more about it</h2>
+                                        <img src="https://img.icons8.com/plasticine/24/000000/tap.png"/>
+                                    </div>
+                                </div> 
+
+                                <div ref={el => {element1 = el}} className={styles.toggleone}>
+                                    <h2 className={styles.tech}><span className={styles.techspan}>TechStack : </span>{props.tech}</h2>
+                                    <h2 className={styles.techsub}>{props.des}</h2> 
+                                    <div className={styles.linkbox}>
+                                        <img ref={el=>{image1 = el}} src="https://img.icons8.com/ios-filled/20/000000/link.png"/>
+                                        <a className={styles.techlink} href={`https://${props.url}`}>{props.url}</a>
+                                    </div>   
+                                </div>  
+                                    
+                            </div>
                     </div>
 
                     

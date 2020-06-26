@@ -1,7 +1,7 @@
 .container{
     padding: 1rem 1.5rem 4rem;
-    background-color: #0093E9;
-    background-image: linear-gradient(540deg, #0093E9 0%, #80D0C7 100%);
+    background-color: #005CE6;
+    background-image: linear-gradient(540deg, #005CE6 0%, #548ee6 100%);
     color: #fff;
     text-align: center !important;
     display: block;
@@ -40,20 +40,21 @@
 }
 
 .subbox{
-    display: flex;
-    flex-direction: row;
     margin: 0 auto 3.5rem;
 }
+
 
 
 .socialicons {
     display:flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-evenly;
     margin-bottom: 2rem;
     width: 400px;
-    opacity: 0.4;
+    background-color: white;
+    border-radius: 50px;
+    /* opacity: 0.4; */
 }
 
 
@@ -66,12 +67,33 @@
 }
 
 .socialicons a{
-    border: white solid 2px ;
-    border-radius: 70px;
+    /* background-color: white; */
+    /* border: white solid 2px ; */
+    /* border-radius: 70px; */
     width: 60px;
     height: 60px;
-
+    transition: all 0.3s ease-in-out;
 }
+
+.socialicons a img{
+    transition: all 0.2s ease-in-out;
+}
+
+/* .socialicons a img:hover{
+    transform: scale(1.2);
+} */
+
+.socialicons a:hover{
+    transform: scale(0.9);
+}
+
+.connect{
+    font-weight: 500;
+    width: 100px;
+    color: black;
+    /* border: blue solid 1px; */
+}
+
 
 .copyright{
     opacity: 0.7;
