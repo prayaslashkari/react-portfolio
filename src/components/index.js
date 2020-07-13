@@ -11,4 +11,5 @@ export {default as Demo} from './demo/Demo'
 export {default as Main} from './main/Main'
 export {default as Project2} from './project2/Project2'
 export {default as Progresslist} from './progress/Progresslist'
+export {default as Carousel} from './carousel/Carousel'
 
