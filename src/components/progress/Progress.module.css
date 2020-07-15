@@ -50,6 +50,8 @@
     align-items: center;
 }
 
+/* tap to know */
+
 .toggletwo{
     /* border: hotpink solid 1px; */
     overflow: hidden;
@@ -57,9 +59,12 @@
     height: 100%;
 }
 
+/* project details */
+
+
 .toggleone{
     overflow: hidden;
-    display: block;
+    display: none;
     height: 0%;
     margin-left: 20px;
 
