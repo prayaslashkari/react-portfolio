@@ -1,7 +1,8 @@
 import React, {useState, useEffect,useRef} from 'react';
 import styles from './Progress.module.css';
-import {gsap,Power3,TweenLite, TweenMax} from 'gsap';
+import {gsap,Power3,TweenLite} from 'gsap';
 
+gsap.registerPlugin(TweenLite, Power3);
 
 const Progress = (props) => {
 
@@ -25,12 +26,13 @@ const Progress = (props) => {
               rotationTween.reversed(!expand);
               setTimeout(() => { roTween.reversed(!expand); }, 500);
               console.log("Expand")
-          }else{
+          }
+          else
+          {
               roTween.reversed(!expand);
               setTimeout(() => { rotationTween.reversed(!expand);}, 500);
               console.log("Not Expand")
           }
-
       }, [expand]);
 
    /*  useEffect(() => {
