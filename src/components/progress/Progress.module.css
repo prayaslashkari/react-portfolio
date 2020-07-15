@@ -54,7 +54,7 @@
     /* border: hotpink solid 1px; */
     overflow: hidden;
     display: block;
-    height: 0%;
+    height: 100%;
 }
 
 .toggleone{
