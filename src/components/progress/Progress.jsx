@@ -19,7 +19,7 @@ const Progress = (props) => {
 
         setRotationTween(TweenLite.to([element2],0.5,{height: "0",opacity: 0,ease: Power3.easeInOut}).reverse()); //tap to know
 
-        setRoTween(TweenLite.fromTo([element1],0.5,{height:"0", display:"none"},{display:"block", height: "auto", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse()); //details valal
+        setRoTween(TweenLite.fromTo([element1],0.5,{height:0},{height: "auto", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse()); //details vala
 
         console.log('called once')
       }, []);
