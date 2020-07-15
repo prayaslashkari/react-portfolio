@@ -26,10 +26,10 @@ const Progresslist = () => {
             },
         
         {id: 4,
-            name: "PSD to HTML/CSS",
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt ex explicabo inventore, unde dignissimos assumenda, perferendis laboriosam consequuntur illum incidunt exercitationem? Dolorum blanditiis ullam ducimus est, dolor ea dolores.",
-            techstack: "HTML, CSS,Flexbox, CSS Grid",
-            url: "www.xyz.com"
+        name: "PSD to HTML/CSS",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt ex explicabo inventore, unde dignissimos assumenda, perferendis laboriosam consequuntur illum incidunt exercitationem? Dolorum blanditiis ullam ducimus est, dolor ea dolores.",
+        techstack: "HTML, CSS,Flexbox, CSS Grid",
+        url: "www.xyz.com"
             },
     ]
 
