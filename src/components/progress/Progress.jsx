@@ -24,11 +24,11 @@ const Progress = (props) => {
           {
               rotationTween.reversed(!expand);
               setTimeout(() => { roTween.reversed(!expand);; }, 500);
-              console.log("loop1")
+              console.log("Expand")
           }else{
               roTween.reversed(!expand);
               setTimeout(() => { rotationTween.reversed(!expand);}, 500);
-              console.log("loop2")
+              console.log("Not Expand")
           }
 
       }, [expand]);
