@@ -17,9 +17,9 @@ const Progress = (props) => {
     useEffect(() => {
         TweenLite.to(image1,1.2,{repeat:-1,rotation: 180, ease:Power3.easeInOut})
 
-        setRotationTween(TweenLite.to([element2],0.5,{height: 0,opacity: 0,ease: Power3.easeInOut}).reverse()); //tap to know
+        setRotationTween(TweenLite.to([element2],0.5,{height: "0",opacity: 0,ease: Power3.easeInOut}).reverse()); //tap to know
 
-        setRoTween(TweenLite.fromTo([element1],0.5,{height:0},{height: "auto", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse()); //details vala
+        setRoTween(TweenLite.fromTo([element1],0.5,{height:0, display:"none"},{display:"block", height: "auto", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse()); //details valal
 
         console.log('called once')
       }, []);
