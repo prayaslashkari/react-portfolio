@@ -10,14 +10,16 @@ const Progress = (props) => {
     const [rotationTween, setRotationTween] = useState(TweenLite.to({},1,{paused: true}));
     const [roTween, setRoTween] = useState(TweenLite.to({},1,{paused: true}));
 
-    let element1 = useRef(null);
-    let element2 = useRef(null);
+    let element2 = useRef(null); //tap to know ---> classname toggle two
+    let element1 = useRef(null); // project details --=> classname toggle one
     let image1 = useRef(null);
 
     useEffect(() => {
         TweenLite.to(image1,1.2,{repeat:-1,rotation: 180, ease:Power3.easeInOut})
+
         setRotationTween(TweenLite.to([element2],0.5,{height: "0",opacity: 0,ease: Power3.easeInOut}).reverse());
-        setRoTween(TweenLite.fromTo([element1],0.5,{height:"0"},{ height: "auto", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse());
+        setRoTween(TweenLite.fromTo([element1],0.5,{height:"0"},{ height: "100px", opacity: 1, ease: Power3.easeInOut, delay: 0.2}).reverse());
+        console.log('called once')
       }, []);
     
       useEffect(() => {
@@ -34,70 +36,6 @@ const Progress = (props) => {
               console.log("Not Expand")
           }
       }, [expand]);
-
-   /*  useEffect(() => {
-        console.log(expand);
-        const tl = gsap.timeline({ paused: true, reversed: true });
-        if(expand){
-            tl.to([element2],0.8,{height: 0,opacity: 0,ease: Power3.easeOut})
-              .to([element1],0.8,{display: "block", height: 100, opacity: 1, ease: Power3.easeOut}).play();
-        }
-        else{
-            tl.to([element2],0.8,{height: 0,opacity: 0,ease: Power3.easeOut})
-                  .to([element1],0.8,{display: "block", height: 100, opacity: 1, ease: Power3.easeOut}).progress(1).reverse();
-        }
-      }, [expand]); */
-    
-
-    /* useEffect(()=>{
-        if(expand)
-        {
-            gsap.to(
-                [element2],
-                0.8,
-                {
-                    height: 0,
-                    opacity: 0,
-                    ease: Power3.easeOut,
-                });
-
-            gsap.to(
-                [element1],
-                0.8,
-                {   
-                    display: "block",
-                    height: 100,
-                    opacity: 1,
-                    ease: Power3.easeOut,
-                    delay: 0.8,
-                });
-        }
-        else{
-            gsap.to(
-                [element1],
-                0.8,
-                {   
-                    display: "none",
-                    height: 0,
-                    opacity: 0,
-                    ease: Power3.easeOut,
-                    
-                });
-            gsap.fromTo(
-                [element2],
-                0.8,
-                {height: 0,
-                opacity: 0},
-                {   
-                    height: '100%',
-                    opacity: 1,
-                    ease: Power3.easeOut,
-                    delay: 0.8,
-                });
-        }
-
-    },[expand]) */
-
 
     return ( 
         <div className={styles.container}>
