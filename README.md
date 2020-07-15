@@ -8,7 +8,7 @@ React Js, HTML, CSS, GSAP
 
 ![Image of Yaktocat](https://github.com/callmemonky/react-portfolio/blob/master/Screenshot%202.jpg)
 ![Image of Yaktocat](https://github.com/callmemonky/react-portfolio/blob/master/Screenshot%203.jpg)
-![Image of Yaktocat](https://github.com/callmemonky/react-portfolio/blob/master/Screenshot%203.jpg)
+![Image of Yaktocat](https://github.com/callmemonky/react-portfolio/blob/master/Screenshot%204.jpg)
 
 ### `Live Link`
 
