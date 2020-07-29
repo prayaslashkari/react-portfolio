@@ -7,7 +7,7 @@ import {Signin,Carousel,Progresslist,LiveProject,Project2, Demo,Footer, Hireme, 
 function App() {
   return (
     <div className="App">
-      <Signin/>
+      {/* <Signin/> */}
       <Navbar/>
       <Main/> 
       <Hero/>
